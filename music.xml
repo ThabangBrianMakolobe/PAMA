@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".Music">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_baseline_music_note_50"
+            android:background="@drawable/circle"
+            android:padding="30dp"/>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/playbtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/button_bg"
+                android:src="@drawable/ic_baseline_play_arrow_24"/>
+
+            <ImageButton
+                android:id="@+id/pausebtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button_bg"
+                android:src="@drawable/ic_baseline_pause_24"/>
+
+            <ImageButton
+                android:id="@+id/stopbtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button_bg"
+                android:src="@drawable/ic_baseline_stop_24"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
